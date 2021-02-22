@@ -4,22 +4,35 @@ import api from './services/api';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
+  const [search, setSearch] = useState('');
 
   const loadingMovies = async () => {
-    const response = await api.get('/');
-    setMovies(response['data'].Search);
+    const response = await api.get(`/?apikey=925eba28&s=${search}`);
+    setMovies([]);
+    if (response.data.Search)
+      setMovies(response['data'].Search);
   }
-  
+
   useEffect(() => {
     loadingMovies();
-  },[]);
+  }, [search]);
 
   return (
     <>
       <h1>Lista de Filmes</h1>
+      <div>
+        <label htmlFor="search">Pesquisar:</label>
+        <input
+          id="search"
+          name="search"
+          type="text"
+          value={search}
+          onChange={(e) => { setSearch(e.target.value) }}
+        />
+      </div>
       <ul>
         {movies.map(m => {
-          return(
+          return (
             <li key={m.imdbID}>
               <MovieCard
                 cover={m.Poster}
