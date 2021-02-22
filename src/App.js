@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import MovieCard from './components/MovieCard';
+import api from './services/api';
 
-function App() {
+const App = () => {
+  const [movies, setMovies] = useState([]);
+
+  const loadingMovies = async () => {
+    const response = await api.get('/');
+    setMovies(response['data'].Search);
+  }
+  
+  useEffect(() => {
+    loadingMovies();
+  },[]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Lista de Filmes</h1>
+      <ul>
+        {movies.map(m => {
+          return(
+            <li key={m.imdbID}>
+              <MovieCard
+                cover={m.Poster}
+                title={m.Title}
+                release={m.Year}
+                type={m.Type}
+              />
+            </li>
+          );
+        })}
+      </ul>
+    </>
   );
-}
+};
 
 export default App;
