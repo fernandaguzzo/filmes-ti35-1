@@ -90,7 +90,7 @@ const Login = () => {
                         </div>
                         <div className={social-fields}>
                             <div className={classes.social-field-facebook}>
-                                <a href="#">
+                                <a className={classes.a}href="#">
                                     <i className="fab fa-facebook-f"></i>
                                     Entre com o Facebook
                                 </a>
@@ -100,7 +100,7 @@ const Login = () => {
                 </div>
 
             </main>
-            </body>
+     </body>
 
         </>
 

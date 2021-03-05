@@ -45,7 +45,6 @@
     padding: 2px;
     width: 300px;
     outline: none;
-  
 }
 
 .form input  {
@@ -65,7 +64,7 @@
 }
 
 
-.form input[type="submit"] {
+.submit {
     margin-top: 0.1rem;
     padding: 0.4rem;
     background: #7600a9;
@@ -77,21 +76,19 @@
     text-align: center;
 }
 
-
-
 .footer {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
 }
 
-.footer span {
+.span {
     color: white;
     font-size: 0.8rem;
     text-align: center;
 }
 
-.footer .social-field {
+.social-fields {
     padding: 0.4rem;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -100,7 +97,12 @@
     margin-top: 1rem;
 }
 
-.footer .social-field a i {
+a {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+i {
     margin: 0 0.5rem;
     width: 15px;
 }
@@ -110,7 +112,7 @@
     color: white;
 }
 
-.footer .social-field-twitter {
+ .social-field-twitter {
     background: #00acee;
 }
 
