@@ -40,12 +40,12 @@ const Login = () => {
                 <h2 className={classes.h2}>Login</h2>
                 <form className={classes.form}onSubmit={formik.handleSubmit}>
 
-                    <div className={classes.input-field}>
+                    <div>
 
                         <label htmlFor="email">Email: </label>
                         <br />
                         <input
-                            className={classes.input-field}
+                            className={classes.fieldInput}
                             id="email"
                             name="email"
                             type="text"
@@ -59,11 +59,11 @@ const Login = () => {
                         <br />
                     </div>
 
-                    <div className={classes.input-field}>
-                        <label className={classes.label} htmlFor="senha">Senha: </label>
+                    <div>
+                        <label htmlFor="senha">Senha: </label>
                         <br />
                         <input
-                            className={classes.input-field}
+                            className={classes.fieldInput}
                             id="senha"
                             name="senha"
                             type="password"
@@ -76,20 +76,20 @@ const Login = () => {
                         <div className={classes.underline} id="underline"></div>
                         <br />
                     </div>
-                    <input type="submit" className={classes.submit} value="Continue"></input>
+                    <input type="submit" className={classes.inputSubmit} value="Continue"></input>
                 </form>
 
                 <div className={classes.footer}>
                     <span className={classes.span}>Ou conecte com redes sociais</span>
-                    <div className={classes.social-fields}>
-                        <div className={classes.social-field-twitter}>
+                    <div className={classes.socialFields}>
+                        <div className={classes.socialFieldTwitter}>
                             <a href="#">
-                                <i className={classes.fab-fa-twitter}></i>
+                                <i className="fab-fa-twitter"></i>
                                     Entre com o Twitter
                                 </a>
                         </div>
-                        <div className={social-fields}>
-                            <div className={classes.social-field-facebook}>
+                        <div className={classes.socialFields}>
+                            <div className={classes.socialFieldFacebook}>
                                 <a href="#">
                                     <i className="fab fa-facebook-f"></i>
                                     Entre com o Facebook

@@ -8,7 +8,7 @@
 }
 
 .body {
-    background-image: url(./images/cinema-4213751_1920.jpg);
+    background: url(../../assets/cinema-4213751_1920.jpg);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -40,7 +40,7 @@
 }
 
 
-.input-field input {
+.fieldInput {
     font-size: 0.9rem;
     padding: 2px;
     width: 300px;
@@ -59,13 +59,13 @@
     color: white;
 }
 
-.label {
+.form label {
     color: white;
 
 }
 
 
-.form input[type="submit"] {
+.form .inputSubmit {
     margin-top: 0.1rem;
     padding: 0.4rem;
     background: #7600a9;
@@ -91,7 +91,7 @@
     text-align: center;
 }
 
-.footer .social-field {
+.footer .socialField {
     padding: 0.4rem;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -100,21 +100,21 @@
     margin-top: 1rem;
 }
 
-.footer .social-field a i {
+.footer .socialField a i {
     margin: 0 0.5rem;
     width: 15px;
 }
 
-.footer .social-field a {
+.footer .socialField a {
     text-decoration: none;
     color: white;
 }
 
-.footer .social-field-twitter {
+.footer .socialFieldTwitter {
     background: #00acee;
 }
 
-.footer .social-field-facebook {
+.footer .socialFieldFacebook {
     background:  #1e3c72;
 }
 
