@@ -7,8 +7,8 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    
+.body {
+    background-image: url(./images/cinema-4213751_1920.jpg);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -18,7 +18,7 @@ body {
 
 }
 
-main.container {
+.main.container {
     background: #363636;
     max-width: 350px;
     min-height: 40vh;
@@ -27,14 +27,14 @@ main.container {
     border-radius: 8px;
 }
 
-main h2 {
+ .h2 {
     font-weight: 600;
     margin-bottom: 2rem;
     position: relative;
     color: #7600a9;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
 }
@@ -48,7 +48,7 @@ form {
   
 }
 
-form input  {
+.form input  {
     background-color: #363636;
     border: 3px;
     border-color: white;
@@ -59,13 +59,13 @@ form input  {
     color: white;
 }
 
-label {
+.label {
     color: white;
 
 }
 
 
-form input[type="submit"] {
+.form input[type="submit"] {
     margin-top: 0.1rem;
     padding: 0.4rem;
     background: #7600a9;
@@ -110,11 +110,11 @@ form input[type="submit"] {
     color: white;
 }
 
-.footer .social-field.twitter {
+.footer .social-field-twitter {
     background: #00acee;
 }
 
-.footer .social-field.facebook {
+.footer .social-field-facebook {
     background:  #1e3c72;
 }
 

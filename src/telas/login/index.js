@@ -1,6 +1,6 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import './login.css';
+import classes from './login.module.css';
 import * as Yup from 'yup';
 
 
@@ -35,17 +35,17 @@ const Login = () => {
 
     return (
         <>
+            <body className={classes.body}>
+            <main className={classes.main}>
+                <h2 className={classes.h2}>Login</h2>
+                <form className={classes.form}onSubmit={formik.handleSubmit}>
 
-            <main className="container">
-                <h2>Login</h2>
-                <form onSubmit={formik.handleSubmit}>
-
-                    <div class="input-field">
+                    <div className={classes.input-field}>
 
                         <label htmlFor="email">Email: </label>
                         <br />
                         <input
-                            className="input-field"
+                            className={classes.input-field}
                             id="email"
                             name="email"
                             type="text"
@@ -55,15 +55,15 @@ const Login = () => {
                             value={formik.values.email}
                         />
                         {formik.touched.email && formik.errors.email ? <label htmlFor="email">{formik.errors.email}</label> : null}
-                        <div className="underline"></div>
+                        <div className={classes.underline}></div>
                         <br />
                     </div>
 
-                    <div className="input-field">
-                        <label htmlFor="senha">Senha: </label>
+                    <div className={classes.input-field}>
+                        <label className={classes.label} htmlFor="senha">Senha: </label>
                         <br />
                         <input
-                            className="input-field"
+                            className={classes.input-field}
                             id="senha"
                             name="senha"
                             type="password"
@@ -73,23 +73,23 @@ const Login = () => {
                             value={formik.values.senha}
                         />
                         {formik.touched.senha && formik.errors.senha ? <label htmlFor="senha">{formik.errors.senha}</label> : null}
-                        <div className="underline" id="underline"></div>
+                        <div className={classes.underline} id="underline"></div>
                         <br />
                     </div>
-                    <input type="submit" value="Continue"></input>
+                    <input type="submit" className={classes.submit} value="Continue"></input>
                 </form>
 
-                <div className="footer">
-                    <span className="span">Ou conecte com redes sociais</span>
-                    <div className="social-fields">
-                        <div className="social-field twitter">
+                <div className={classes.footer}>
+                    <span className={classes.span}>Ou conecte com redes sociais</span>
+                    <div className={classes.social-fields}>
+                        <div className={classes.social-field-twitter}>
                             <a href="#">
-                                <i className="fab fa-twitter"></i>
+                                <i className={classes.fab-fa-twitter}></i>
                                     Entre com o Twitter
                                 </a>
                         </div>
-                        <div className="social-fields">
-                            <div className="social-field facebook">
+                        <div className={social-fields}>
+                            <div className={classes.social-field-facebook}>
                                 <a href="#">
                                     <i className="fab fa-facebook-f"></i>
                                     Entre com o Facebook
@@ -100,6 +100,7 @@ const Login = () => {
                 </div>
 
             </main>
+            </body>
 
         </>
 
