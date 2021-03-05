@@ -45,7 +45,6 @@
     padding: 2px;
     width: 300px;
     outline: none;
-  
 }
 
 .form input  {
@@ -64,7 +63,6 @@
 
 }
 
-
 .form .inputSubmit {
     margin-top: 0.1rem;
     padding: 0.4rem;
@@ -77,15 +75,13 @@
     text-align: center;
 }
 
-
-
 .footer {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
 }
 
-.footer span {
+.span {
     color: white;
     font-size: 0.8rem;
     text-align: center;
@@ -100,7 +96,8 @@
     margin-top: 1rem;
 }
 
-.footer .socialField a i {
+.footer .socialField a,
+.footer .socialField i {
     margin: 0 0.5rem;
     width: 15px;
 }
@@ -117,8 +114,3 @@
 .footer .socialFieldFacebook {
     background:  #1e3c72;
 }
-
-
-
-
-

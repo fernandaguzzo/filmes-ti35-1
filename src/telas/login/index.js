@@ -100,7 +100,7 @@ const Login = () => {
                 </div>
 
             </main>
-            </body>
+     </body>
 
         </>
 
