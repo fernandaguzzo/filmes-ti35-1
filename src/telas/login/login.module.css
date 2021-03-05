@@ -18,10 +18,9 @@
 
 }
 
-.main.container {
+.main {
     background: #363636;
-    max-width: 350px;
-    min-height: 40vh;
+    width: 500px;
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -43,8 +42,9 @@
 .fieldInput {
     font-size: 0.9rem;
     padding: 2px;
-    width: 300px;
+    width: 100%;
     outline: none;
+
 }
 
 .form input  {
@@ -81,13 +81,13 @@
     margin-top: 1rem;
 }
 
-.span {
+/*.span {
     color: white;
     font-size: 0.8rem;
     text-align: center;
 }
 
-.footer .socialField {
+.footer .socialFields {
     padding: 0.4rem;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -96,21 +96,31 @@
     margin-top: 1rem;
 }
 
-.footer .socialField a,
-.footer .socialField i {
+ .socialFields .socialFieldFacebook a,
+ .socialFieldTwitter .socialFields i {
     margin: 0 0.5rem;
     width: 15px;
 }
 
-.footer .socialField a {
+ .socialFields a {
     text-decoration: none;
     color: white;
 }
 
-.footer .socialFieldTwitter {
+/*.socialFields .socialFieldTwitter {
     background: #00acee;
 }
-
-.footer .socialFieldFacebook {
+*/
+/*.socialFields .socialFieldFacebook {
     background:  #1e3c72;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
 }
+*/
+
+/*.socialFields .socialFieldFacebook i {
+    margin-right: 10px;
+}
+*/
+

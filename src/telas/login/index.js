@@ -79,25 +79,7 @@ const Login = () => {
                     <input type="submit" className={classes.inputSubmit} value="Continue"></input>
                 </form>
 
-                <div className={classes.footer}>
-                    <span className={classes.span}>Ou conecte com redes sociais</span>
-                    <div className={classes.socialFields}>
-                        <div className={classes.socialFieldTwitter}>
-                            <a href="#">
-                                <i className="fab-fa-twitter"></i>
-                                    Entre com o Twitter
-                                </a>
-                        </div>
-                        <div className={classes.socialFields}>
-                            <div className={classes.socialFieldFacebook}>
-                                <a href="#">
-                                    <i className="fab fa-facebook-f"></i>
-                                    Entre com o Facebook
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
 
             </main>
      </body>
