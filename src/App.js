@@ -1,11 +1,11 @@
 import React from 'react';
-import Login from './telas/login';
+import Filme from './telas/TelaFilme';
 
 
 
 
 const App = () => {
-  return <Login/>
+  return <Filme/>
 }
 
 export default App;
